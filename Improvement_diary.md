@@ -19,3 +19,10 @@ Try to add more filters, not only for human face, but for other objects, to incr
 To compare the target face with the faces on screen, it use function **face_recognition.compare_faces** from the popular Python face_recognition library built on dlib’s facial recognition model
 
 When I try the filter, I found that it's not ideal for Asian people's face comparison. So I search the internet and found that it indeed not ideal. In the github repository of dlib, I found a [closed but not solved issue](https://github.com/davisking/dlib/issues/1407) of the asian people face recognition. Maybe the solution for me is to [train the model](https://dlib.net/dnn_metric_learning_on_images_ex.cpp.html) with more dataset provided, or choose another model.
+
+7/34/2025:
+
+Choose Deepface package in python. Becasue it is a high-level face analysis library. And it provides a unified interface to call various backend models (such as ArcFace, Facenet, Dlib, VGG-Face, etc.) for recognition or analysis. We can use call ArcFace in this package, which can do better in asian face comparison.
+
+
+
